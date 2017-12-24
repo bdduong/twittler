@@ -6,41 +6,76 @@ html, body, div, h1, header, p, a, h1 {
   font-size: 100%;
 }
 
-
-h1 {
+#header h1 {
+  color: white;
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border-bottom: 4px solid white;
+  background-color: green;
 }
 
-div {
-  text-align: none;
+#header h4 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  padding-bottom: 7px;
-  font-size: 20px;
-} 
+  text-align: center;
+  margin-top: 0;
+  padding: 10px;
+  color: white;
+  font-weight: 200;
+  background-color: grey;
+}
+
+body {
+  background-color: lightblue;
+}
 
 .date {
   font-size: 10px;
 }
 
 .message {
-
 }
-
-
 
 a {
 text-decoration: none;
+
 }
 
 a:hover {
-  color: red;
+  color: blue;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .mainbox {
-  text-align: center;
+  margin: 0 auto;
+  width: 700px;
 }
+.mainbox div{
+  border: 2px solid white;
+  border-radius: 2px;
+  text-align: none;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#refresh {
+  text-align: center;
+  margin-bottom: 5px;
+}
+#button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
 

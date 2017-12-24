@@ -13,7 +13,7 @@ $(document).ready(function(){
       }
       var $tweet = $('<div class="tweet"></div>');
       var $tweetLink = $('<a href="#">@' + tweet.user + '</a>');
-      var $message = $('<p class="message">' + tweet.message + '</p>');
+      var $message = $('<p class="message"> ' + tweet.message + '</p>');
       var $date = $('<p class="date">' + tweet.created_at + '</p>');
 
       $tweetLink.appendTo($tweet);

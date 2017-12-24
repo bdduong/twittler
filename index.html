@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="main.js"></script>
+    <title>Twit Twit</title>
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <div id="header">
+      <h1>Twittler</h1>
+      <h3>Tagline</h3>
+    </div>
+    <div id="refresh">
+      <button type="button">More News!</button>
+    </div>
+    <div class="mainbox"></div>
+    <footer>FOOTER</footer>
   </body>
 </html>
